@@ -32,7 +32,7 @@ class CitiesViewController: UITableViewController {
     
     // MARK: Actions
     
-    func settingsButtonPressed() {
+    @objc func settingsButtonPressed() {
         router.showSettings()
     }
     
@@ -85,7 +85,7 @@ class CitiesViewController: UITableViewController {
             return UIBarButtonItem()
         }
         
-        let attributes = [NSFontAttributeName : font]
+        let attributes = [NSAttributedStringKey.font : font]
         
         button.setTitleTextAttributes(attributes, for: .normal)
 

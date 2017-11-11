@@ -42,7 +42,7 @@ class SettingsViewController: UIViewController {
     
     // MARK: Actions
     
-    func doneButtonPressed() {
+    @objc func doneButtonPressed() {
         router.finish()
     }
 }

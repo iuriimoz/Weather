@@ -7,11 +7,15 @@
 //
 
 class MasterAssembly {
-    private let _servicesAssembly = ServicesAssemblyImpl()
-    private let _mainStoryAssembly = MainStoryAssemblyImpl()
-    private let _settingsStoryAssembly = SettingsStoryAssemblyImpl()
+    private var _servicesAssembly: ServicesAssemblyImpl!
+    private var _mainStoryAssembly: MainStoryAssemblyImpl!
+    private var _settingsStoryAssembly: SettingsStoryAssemblyImpl!
     
     init() {
+        _servicesAssembly = ServicesAssemblyImpl()
+        _mainStoryAssembly = MainStoryAssemblyImpl()
+        _settingsStoryAssembly = SettingsStoryAssemblyImpl()
+        
         let storyAssemblies: [AbstractStoryAssembly] =
             [_mainStoryAssembly, _settingsStoryAssembly]
         storyAssemblies.forEach { storyAssembly in

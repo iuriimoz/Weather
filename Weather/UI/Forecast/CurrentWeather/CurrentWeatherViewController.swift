@@ -63,7 +63,7 @@ class CurrentWeatherViewController: UIViewController {
     
     // MARK: Actions
     
-    func refreshButtonPressed() {
+    @objc func refreshButtonPressed() {
         updateDataIfNeeded()
     }
     
