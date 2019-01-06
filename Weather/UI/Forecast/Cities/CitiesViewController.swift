@@ -85,7 +85,7 @@ class CitiesViewController: UITableViewController {
             return UIBarButtonItem()
         }
         
-        let attributes = [NSAttributedStringKey.font : font]
+        let attributes = [NSAttributedString.Key.font : font]
         
         button.setTitleTextAttributes(attributes, for: .normal)
 

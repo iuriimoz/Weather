@@ -7,5 +7,5 @@
 //
 
 protocol AbstractStoryAssembly: class {
-    weak var servicesAssembly: ServicesAssembly! { get set }
+    var servicesAssembly: ServicesAssembly! { get set }
 }
