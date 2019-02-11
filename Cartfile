@@ -2,3 +2,4 @@ github "Alamofire/Alamofire" ~> 4.8.0
 github "Alamofire/AlamofireImage" ~> 3.5.0
 github "SwiftyJSON/SwiftyJSON" ~> 4.2.0
 github "AliSoftware/OHHTTPStubs" ~> 6.1.0
+
